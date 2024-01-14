@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Sistema de Riego Automatico</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="./src/logo_flor_3.png">
+</head>
+<body>
+    <div class="cabecera">
+        <img src="src/logo_oficial.png" alt="Sistema de Riego">
+        <h1>Estado del Sistema de Riego</h1>
+    </div>
+
+    <div class="container">
+
+        <div class="humidity_soil">
+            <p><span class="etiqueta_servidor">Humedad del suelo: </span><span id="soil_humidity_value">Cargando...</span></p>
+            <div class="cont_progress-bar" id="soil_hum_cont_bar"><div class="progress-bar" id="soil_humidity_bar"></div></div>
+        </div>
+        
+        <div class="humidity_air">
+            <p><span class="etiqueta_servidor">Humedad del Aire: </span><span id="air_humidity_value">Cargando...</span></p>
+            <div class="cont_progress-bar" id="air_hum_cont_bar"><div class="progress-bar" id="air_humidity_bar"></div></div>
+        </div>
+
+        <div class="temperature">
+            <p><span class="etiqueta_servidor">Temperatura: </span><span id="temp_value">Cargando...</span></p>
+            <div class="thermometer" id="temp_thermometer"></div>
+        </div>
+
+        <div class="led_verde">
+            <p><span class="etiqueta_servidor">LED Verde: </span><span id="LED_VERDE">Cargando...</span></p>
+            <div class="led" id="LED_VERDE_indicator"></div>
+        </div>
+
+        <div class="led_rojo">
+            <p><span class="etiqueta_servidor">LED Rojo: </span><span id="LED_ROJO">Cargando...</span></p>
+            <div class="led" id="LED_ROJO_indicator"></div>
+        </div>
+
+        <div class="bomba">
+            <p><span class="etiqueta_servidor">Estado de la Bomba: </span><span id="bomba_estado">Cargando...</span></p>
+            <div class="motor" id="motor_bomba"></div>
+        </div>
+        
+    </div>
+
+    <footer class="site-footer">
+        <div class="footer-info">
+            <h2>Acerca del proyecto</h2>
+            <div class="text-about">
+                <p>
+                    El propósito fundamental de este proyecto es desarrollar un sistema avanzado de control y automatización para el riego en plantaciones agrícolas. La meta es crear una solución tecnológica integral que permita la gestión eficiente y autónoma del riego, adaptándose a las necesidades específicas del terreno y las condiciones ambientales.
+                </p>
+                <hr>
+                <p>
+                    El enfoque del proyecto se centra en la implementación de tecnologías de vanguardia en el ámbito de la agricultura de precisión. Esto incluye el uso de sensores ambientales y del suelo para monitorear en tiempo real parámetros críticos como la humedad del suelo, la temperatura, la humedad relativa del aire.
+                </p> 
+            </div>            
+        </div>
+        
+        <hr>
+
+        <div class="container-dataPersonal">
+            <div class="dataPersona-name">
+                <p class="copyright-text">Copyright &copy; 2023 All Rights Reserved by
+                    <a href="https://github.com/iesusdavila" target="_blank">Davila - Medardo</a>.
+                </p>
+            </div>
+    
+            <div class="dataPersonal-industry">
+                <p>Sistema de Riego Automático</p>
+            </div>
+    
+            <div class="dataPersona-socialNet">
+                <ul class="social-icons">
+                    <li>
+                        <a class="instagram" href="https://www.instagram.com/iesusdavilaa/?hl=es" target="_blank">
+                            <img src="./src/icons_redes/instagram.png" alt="Perfil de instagram">
+                        </a>
+                    </li>
+                    <li>
+                        <a class="twitter" href="https://x.com/Iesus_Davila?t=0E4g9aPKjGK0ZgQKmjqiLw&s=09" target="_blank">
+                            <img src="./src/icons_redes/twitter.png" alt="Perfil de Twitter"></a>
+                    </li>
+                    <li>
+                        <a class="github" href="https://github.com/iesusdavila" target="_blank">
+                            <img src="./src/icons_redes/github.png" alt="Perfil de Github"></a>
+                    </li>
+                    <li>
+                        <a class="linkedin" href="https://www.linkedin.com/in/iesus-davila-b1b701211/?originalSubdomain=ec"
+                            target="_blank">
+                            <img src="./src/icons_redes/linkedin.png" alt="Perfil de Linkedin"></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
